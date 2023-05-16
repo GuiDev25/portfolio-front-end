@@ -19,7 +19,7 @@ img{
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 5rem;
+    padding: 1rem 8rem;
 }
 .nav-list{
     display: flex;
@@ -35,10 +35,13 @@ img{
     margin: 0 15px;
 }
 .nav-item :hover{
-    color: rgb(0,212,255);
+    color: white;
     font-size: 1.19rem;
     text-shadow: rgb(0,0,0,0.1) 5px 5px 5px ;
+    background-color: rgb(0, 174, 255);
     transition: all 0.3s ease-in-out 0s;
+    padding: 0 7px;
+    border-radius: 5px;
 }
 .nav-link{
     font-size: 1.15rem;
@@ -110,9 +113,12 @@ img{
     }
 }
 
-.mensagem{
-    padding: 10rem 5rem 0;
+#inicio{
+    display: flex;
+    justify-content: space-between;
+     padding: 10rem 8rem 0;
 }
+
 .titulo{
     font-size: 3rem;
 }
@@ -137,3 +143,4 @@ img{
     padding: 0px 18px;
     transition: padding 0.35s ease-in;
 }
+
