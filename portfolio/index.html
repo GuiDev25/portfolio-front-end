@@ -17,19 +17,48 @@
                 <div>
                     <img src="assets/logo-gui.png" alt="logo gui">
                 </div>
-                
                 <div class="nav-list">
                     <ul>
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sobre Mim</a></li>
+                        <li class="nav-item"><a href="#inicio" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Sobre mim</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
                     </ul>
                 </div>
-                <div class="github">
-                    <button><a href="https://github.com/GuiDev25">GitHub</a></button>
+                <div>
+                    <button class="github"><a href="https://github.com/GuiDev25" target="_blank">GitHub</a></button>
                 </div>
-            </header>
+                <!-- icone responsivo -->
+                <div class="mobile-menu-icon">
+                    <button onclick="showmenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                    </button>
+                </div>
             </nav>
+            <!-- display menu responsivo -->
+            <div class="mobile-menu">
+                <ul>
+                        <li class="nav-item"><a href="#inicio" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#sobre" class="nav-link">Sobre mim</a></li>
+                        <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                </ul>
+                
+                <div>
+                    <button class="github"><a href="https://github.com/GuiDev25" target="_blank">GitHub</a></button>
+                </div>
+
+            </div>
         </header>
+        
+        <body>
+            <div id="inicio" class="mensagem">
+                <h1 class="titulo">Olá, seja bem vindo!</h1>
+                <h4> Eu sou o Guilherme, desenvolvedor front-end.<br>
+                Desenvolvi esse site para expor meus projetos pessoais e <br>
+                incentivar e inspirar outros devs.</h4>
+                <button class="projetos"><a href="#projetos">Meus projetos</a></button>
+            </div>
+        </body>
+
+        <script src="assets/script.js"></script>
     </body>
 </html>

@@ -1,9 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300;400&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif ;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
     color: #fff;
     text-decoration: none;
+    list-style: none;
+}
+/*Cabeçalho*/
+header{
+    background-color: #24252a;
+
+}
+img{
+    width: 8rem;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+.nav-item :hover{
+    color: rgb(0,212,255);
+    font-size: 1.19rem;
+    text-shadow: rgb(0,0,0,0.1) 5px 5px 5px ;
+    transition: all 0.3s ease-in-out 0s;
+}
+.nav-link{
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.github{
+    border: none;
+    background: linear-gradient(125deg, rgba(0,55,201,1) 16%, rgba(15,15,194,1) 48%, rgba(0,212,255,1) 88%);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.github a{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.github :hover{
+    font-size: 1.15rem;
+    transition: all 0.3s ease-in;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .github{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .github{
+        display: block;
+        padding: 1rem 2rem;
+        border-radius: 0;
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+}
+
+.mensagem{
+    padding: 10rem 5rem 0;
+}
+.titulo{
+    font-size: 3rem;
+}
+
+.mensagem h4{
+    font-size: 1.2rem;
+    font-weight: 350;
+}
+.projetos{
+    border: none;
+    margin-top: 10px;
+    background: linear-gradient(125deg, rgba(0,55,201,1) 16%, rgba(15,15,194,1) 48%, rgba(0,212,255,1) 88%);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.projetos a{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.projetos :hover{
+    padding: 0px 18px;
+    transition: padding 0.35s ease-in;
 }
