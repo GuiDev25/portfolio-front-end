@@ -8,12 +8,28 @@
     }
 }
 
+:root{
+    font-size: 16px;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#6129ff,#7948ff);
+    border-radius: 30px;
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', 'Open Sans', sans-serif;
     color: #333;
-    font-weight: 700;
     text-decoration: none;
     list-style: none;
 }
@@ -37,7 +53,7 @@ body{
 }
 
 .nav-item{
-    margin: 0 15px;
+    padding: 0 15px;
 }
 .nav-item a:hover{
     font-size: 1.2rem;
@@ -142,4 +158,39 @@ body{
 .botao button:hover{
     padding: 0 1.5rem;
     transition: all ease-out 0.2s;
+}
+
+/*Sessão 2*/
+#sessao2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25vh 15vh;
+}
+#ilus2 img{
+    width: 30.5rem;
+    height: auto;
+    animation: animacaoImg 1s infinite alternate;
+}
+.mensagem-2{
+    text-align: right;
+}
+.mensagem-2 h4{
+    font-weight:400;
+    font-size: 1.5rem;
+}
+.mensagem-2 h1{
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+.mensagem-2 svg{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #6129ff;
+}
+#localizacao{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
 }
