@@ -39,7 +39,7 @@ body{
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    margin: 2.5vh 15vh 0 15vh;
+    margin: 2.5vh 25vh 0 25vh;
 }
 .nav-list{
     display: flex;
@@ -123,7 +123,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2vh 15vh;
+    margin: 2vh 25vh;
 }
 .imagem-inicio{
     display: flex;
@@ -165,7 +165,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25vh 15vh;
+    margin: 25vh 25vh;
 }
 #ilus2 img{
     width: 30.5rem;
