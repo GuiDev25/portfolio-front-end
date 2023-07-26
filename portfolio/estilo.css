@@ -177,6 +177,7 @@ body{
     text-align: right;
 }
 .mensagem-2 h4{
+    color: #333;
     font-weight:400;
     font-size: 1.5rem;
 }
@@ -199,18 +200,22 @@ body{
 #sessao3{
     background-image: url(assets/bg-sessao-3.png);
     background-color:#6129ff;
+    padding-bottom: 2vh;
 }
 .mensagem-3{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 8vh;
 }
 .mensagem-3 h4{
+    color: #fff;
     font-weight:400;
     font-size: 1.5rem;
 }
 .mensagem-3 h1{
+    color: #fff;
     font-size: 4rem;
     line-height: 4.5rem;
 }
@@ -227,6 +232,16 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.div-projetos h1,h4{
+    color: #fff;
+    display: flex;
+}
+.fotos-projetos{
+    width: 750px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 15px;
+}
 .botoes-proj{
     gap: 1rem;
 }
@@ -235,10 +250,12 @@ body{
     background-color: #7948ff;
     border: none;
     border-radius: 6px;
+    -webkit-box-shadow: 14px 10px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 14px 10px 25px 0px rgba(0,0,0,0.3);
+    box-shadow: 14px 10px 25px 0px rgba(0,0,0,0.3);
 }
 .botoes-proj button a{
+    color: #fff;
     font-weight: 600;
     font-size: 1rem;
-    color: #fff;
 }
-
