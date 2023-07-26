@@ -87,9 +87,9 @@ body{
     display: none;
 }
 /*Interação Mobile*/
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
     .nav-bar{
-        padding: 1.5rem 4rem;
+        margin: 2.5vh 2rem 0;
     }
     .nav-item{
         display: none;
@@ -103,8 +103,8 @@ body{
     .mobile-menu-icon button{
         display: flex;
         align-items: center;
-        background-color: #03045e;
-        border-radius: 8px;
+        background-color: #6129ff;
+        border-radius: 5px;
         border: none;
         cursor: pointer;
     }
@@ -172,10 +172,65 @@ body{
     padding: 0 1.5rem;
     transition: all ease-out 0.2s;
 }
-
+@media screen and (max-width: 768px) {
+    #inicio{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1vh 2vh;
+    }
+    .imagem-inicio{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        animation: animacaoImg 1s infinite alternate;
+    }
+    .imagem-inicio img{
+        width: 400px;
+        height: auto;
+    }
+    .mensagem{
+        margin: 0vh 2vh;
+    }
+    .mensagem h4{
+        color: #333;
+        font-weight:400;
+        font-size: 1.5rem;
+    }
+    .mensagem h1{
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    .mensagem h2{
+        font-size: 1.5rem;
+    }
+    .botao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .botao button{
+        padding: 0 1rem;
+        border-radius: 6px;
+        border: none;
+        background-color: #6129ff;
+    }
+    .botao button a{
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .botao button:hover{
+        padding: 0 1.5rem;
+        transition: all ease-out 0.2s;
+    }
+}
 /*Sessão 2*/
 #sessao2{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 25vh 25vh;
@@ -186,9 +241,15 @@ body{
     animation: animacaoImg 1s infinite alternate;
 }
 .mensagem-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: right;
 }
 .mensagem-2 h4{
+    max-width: 400px;
+    text-align: right;
     color: #333;
     font-weight:400;
     font-size: 1.5rem;
@@ -207,6 +268,49 @@ body{
     justify-content: end;
     align-items: center;
     gap: 10px;
+}
+@media screen and (max-width: 768px){
+    #sessao2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 25vh 2vh;
+    }
+    #ilus2 img{
+        width: 380px;
+        height: auto;
+        animation: animacaoImg 1s infinite alternate;
+    }
+    .mensagem-2{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mensagem-2 h4{
+        text-align: center;
+        color: #333;
+        font-weight:400;
+        font-size: 1.3rem;
+    }
+    .mensagem-2 h1{
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+    .mensagem-2 svg{
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #6129ff;
+    }
+    #localizacao{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 5px;
+    }
 }
 /*Projetos*/
 #sessao3{
