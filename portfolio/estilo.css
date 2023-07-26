@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 
+@keyframes entrada{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 @keyframes animacaoImg{
     from {
         transform: rotate(0.2deg);
@@ -28,11 +38,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', 'Open Sans', sans-serif;
     color: #333;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    animation: entrada 1s ease;
 }
 body{
     width: auto;
@@ -47,7 +59,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-
 .nav-list ul{
     display: flex;
     justify-content: center;
@@ -131,6 +142,7 @@ body{
     animation: animacaoImg 1s infinite alternate;
 }
 .mensagem h4{
+    color: #333;
     font-weight:400;
     font-size: 2rem;
 }
@@ -201,6 +213,7 @@ body{
     background-image: url(assets/bg-sessao-3.png);
     background-color:#6129ff;
     padding-bottom: 2vh;
+    text-align: center;
 }
 .mensagem-3{
     display: flex;
@@ -212,11 +225,11 @@ body{
 .mensagem-3 h4{
     color: #fff;
     font-weight:400;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .mensagem-3 h1{
     color: #fff;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 4.5rem;
 }
 .projetos{
@@ -236,26 +249,71 @@ body{
     color: #fff;
     display: flex;
 }
-.fotos-projetos{
+.fotos-projetos img{
     width: 750px;
     height: 550px;
+    object-fit: cover;
     background-color: #fff;
     border-radius: 15px;
 }
-.botoes-proj{
-    gap: 1rem;
+.fotos-projetos img:hover{
+    transform: scale(1.02);
+    transition: transform 0.8s ease;
 }
-.botoes-proj button{
-    padding:0.2rem 0.8rem;
-    background-color: #7948ff;
+.botoes-proj{
+    display: flex;
+    gap:15px;
+}
+.botoes-proj button{   
+    padding:0.2rem 1rem;
+    background-color:#6129ff;
     border: none;
     border-radius: 6px;
     -webkit-box-shadow: 14px 10px 25px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 14px 10px 25px 0px rgba(0,0,0,0.3);
     box-shadow: 14px 10px 25px 0px rgba(0,0,0,0.3);
 }
+.botoes-proj button:hover{
+    padding:0.2rem 1.2rem;
+    transition: all 0.5s ease;
+}
 .botoes-proj button a{
     color: #fff;
     font-weight: 600;
     font-size: 1rem;
+}
+/*Botao voltar*/
+.scrolltop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    border: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+    background: none;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+.scrolltop img{
+    width: 50px;
+    height: 50px;
+}
+.scrolltop.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #0f0f0f;
+}
+footer a{
+    color: #fff;
 }
