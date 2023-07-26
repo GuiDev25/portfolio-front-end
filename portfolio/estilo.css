@@ -195,3 +195,50 @@ body{
     align-items: center;
     gap: 10px;
 }
+/*Projetos*/
+#sessao3{
+    background-image: url(assets/bg-sessao-3.png);
+    background-color:#6129ff;
+}
+.mensagem-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mensagem-3 h4{
+    font-weight:400;
+    font-size: 1.5rem;
+}
+.mensagem-3 h1{
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+.projetos{
+    margin: 12vh 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.div-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.botoes-proj{
+    gap: 1rem;
+}
+.botoes-proj button{
+    padding:0.2rem 0.8rem;
+    background-color: #7948ff;
+    border: none;
+    border-radius: 6px;
+}
+.botoes-proj button a{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+}
+
