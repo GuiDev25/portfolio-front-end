@@ -141,6 +141,9 @@ body{
     display: flex;
     animation: animacaoImg 1s infinite alternate;
 }
+.imagem-inicio img{
+    width: 30.5rem;
+}
 .mensagem h4{
     color: #333;
     font-weight:400;
@@ -242,19 +245,22 @@ body{
 }
 .mensagem-2{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    text-align: right;
 }
 .mensagem-2 h4{
-    max-width: 400px;
     text-align: right;
+    max-width: 400px;
     color: #333;
     font-weight:400;
     font-size: 1.5rem;
 }
+.mensagem-2 h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: right;
+}
 .mensagem-2 h1{
+    text-align: right;
     font-size: 4rem;
     line-height: 4.5rem;
 }
@@ -342,6 +348,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 5vh;
+}
+.projetos h4{
+    font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 .div-projetos{
     display: flex;
