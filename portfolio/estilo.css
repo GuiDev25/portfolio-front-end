@@ -131,6 +131,10 @@ body{
     }
 }
 /* principal */
+main{
+    margin-top: 10px;
+    border-top: 1px solid #dfdfdf;
+}
 #inicio{
     display: flex;
     justify-content: space-between;
