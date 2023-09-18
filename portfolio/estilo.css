@@ -161,7 +161,7 @@ body{
     gap: 10px;
 }
 .botao button{
-    padding: 0 1rem;
+    padding: 0.15rem 2rem;
     border-radius: 6px;
     border: none;
     background-color: #6129ff;
@@ -172,7 +172,7 @@ body{
     font-size: 1.5rem;
 }
 .botao button:hover{
-    padding: 0 1.5rem;
+    padding: 0.15rem 2.3rem;
     transition: all ease-out 0.2s;
 }
 @media screen and (max-width: 768px) {
