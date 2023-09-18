@@ -139,7 +139,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2vh 25vh;
+    margin: 8vh 25vh 0;
 }
 .imagem-inicio{
     display: flex;
@@ -185,7 +185,7 @@ main{
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
-        margin: 1vh 2vh;
+        margin: 1vh 2vh 0;
     }
     .imagem-inicio{
         display: flex;
@@ -240,7 +240,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 25vh 25vh;
+    margin: 15vh 25vh 15vh;
 }
 #ilus2 img{
     width: 30.5rem;
@@ -285,7 +285,7 @@ main{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 25vh 2vh;
+        margin: 15vh 2vh 10vh;
     }
     #ilus2 img{
         width: 380px;
@@ -326,6 +326,8 @@ main{
 #sessao3{
     background-image: url(assets/bg-sessao-3.png);
     background-color:#6129ff;
+    background-position: center;
+    background-size: 110%;
     padding-bottom: 2vh;
     text-align: center;
 }
@@ -401,6 +403,10 @@ main{
     font-size: 1rem;
 }
 @media screen and (max-width: 1550px){
+    #sessao3{
+        background-position: center;
+        background-size: 600%;
+    }
     .mensagem-3 h4{
         color: #fff;
         font-weight:400;
