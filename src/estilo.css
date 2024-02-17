@@ -160,6 +160,22 @@ main{
 .mensagem h2{
     font-size: 2rem;
 }
+.botao-sessao3{
+    display:flex;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #4f19e6;
+}
+.botao-sessao3:hover{
+    padding: 0.5rem 1.8rem;
+    transition: all 0.3s ease-in;
+}
+.botao-sessao3 a{
+    font-size: 1rem;
+    color: #fff;
+}
 .botao{
     display: flex;
     gap: 10px;

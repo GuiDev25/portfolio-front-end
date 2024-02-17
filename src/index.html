@@ -4,19 +4,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Guilherme Almeida | Desenvolvedor FullStack</title>
+        <title>Guilherme Almeida | Desenvolvedor Full stack</title>
         <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
         <link rel="manifest" href="assets/site.webmanifest">
         <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+        <script src="script.js"></script>
     </head>
     <body>
-        <button class="scrolltop" onclick="voltar();"><img src="assets/arrow.png" alt="voltar"></button>
+        <button class="scrolltop" onclick="voltar();"><img src="../assets/arrow.png" alt="voltar"></button>
         <header>
             <nav class="nav-bar">
                 <div>
-                    <a href="#"><img src="assets/logo-gui.png" alt="logo gui"></a>
+                    <a href="#"><img src="../assets/logo-gui.png" alt="logo gui"></a>
                 </div>
                 <div class="nav-list">
                     <ul>
@@ -25,15 +26,15 @@
                         <li class="nav-item"><a href="#sessao3" class="nav-link">Projetos</a></li>
                     </ul>
                 </div>
-                <!-- icone responsivo -->
+                
                 <div class="mobile-menu-icon">
-                    <button onclick="showmenu()">
+                    <button onclick="mostrarMenu()">
                         <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
                     </button>
                 </div>
             </nav>
             
-            <!-- display menu responsivo -->
+            
             <div class="mobile-menu">
                 <ul>
                     <li class="nav-item"><a href="#inicio" class="nav-link">Home</a></li>
@@ -91,7 +92,7 @@
             </span>
             <div id="sessao3">
                 <div class="mensagem-3">
-                    <h4>Meus</h4>
+                    <h4>Meus principais</h4>
                     <h1>Projetos</h1>
                 </div>
                 <div class="projetos">
@@ -120,31 +121,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="projetos">
-                    <div class="div-projetos">
-                        <div class="fotos-projetos">
-                            <img src="assets/calctemp.png" alt="Projeto calculadora">
-                        </div>
-                        <h1>Calculadora</h1>
-                        <h4>Mini projeto que utiliza JavaScript para calcular <br>
-                        quantos anos, meses e dias uma pessoa já viveu.</h4>
-                        <div class="botoes-proj">
-                            <button><a href="">Testar</a></button>
-                            <button><a href="">Código</a></button>
-                        </div>
-                    </div>
-                    <div class="div-projetos">
-                        <div class="fotos-projetos">
-                            <img src="assets/boteco.png" alt="Projeto links">
-                        </div>
-                        <h1>Página de Links</h1>
-                        <h4>Projeto feito para um restaurante, onde uma <br>
-                        única página reune todos os links úteis para o cliente.</h4>
-                        <div class="botoes-proj">
-                            <button><a href="">Testar</a></button>
-                            <button><a href="">Código</a></button>
-                        </div>
-                    </div>
+                <div class="div-projetos">
+                    <button class="botao-sessao3"><a href="https://github.com/GuiDev25" target="_blank">
+                        Mais projetos! 🔗</a>
+                    </button>
                 </div>
             </div>
         </main>
@@ -152,5 +132,4 @@
             <a href="https://www.instagram.com/guifernandes.psd/">Gui.Developer | Todos os direitos reservados</a>
         </footer>
     </body>
-    <script src="assets/script.js"></script>
 </html>
